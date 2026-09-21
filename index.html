@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>a2rp: Reactjs</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-size: 12px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .mainContainer {
+                padding: 15px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .title {
+                font-size: 20px;
+                padding: 10px;
+                padding-left: 30px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                background-color: #222;
+                color: #fff;
+            }
+            pre {
+                white-space: pre-wrap; /* Since CSS 2.1 */
+                white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+                white-space: -pre-wrap; /* Opera 4-6 */
+                white-space: -o-pre-wrap; /* Opera 7 */
+                word-wrap: break-word; /* Internet Explorer 5.5+ */
+                background-color: aliceblue;
+                padding: 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            ul,
+            ol {
+                margin: 15px;
+                padding-left: 30px;
+            }
+            ul li,
+            ol li {
+                margin: 15px;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                margin-top: 5px;
+                margin-bottom: 3px;
+            }
+        </style>
+    </head>
+    <body class="mainContainer">
+        <div class="title">Last Update: August 02, 2023</div>
+        <h3 class="title">React</h3>
+        React (also known as React.js or ReactJS) is a free and open-source
+        front-end JavaScript library for building user interfaces based on
+        components. It is maintained by Meta (formerly Facebook) and a community
+        of individual developers and companies. React can be used to develop
+        single-page, mobile, or server-rendered applications with frameworks
+        like Next.js. Because React is only concerned with the user interface
+        and rendering components to the DOM, React applications often rely on
+        libraries for routing and other client-side functionality.
+
+        <div class="title">Why we use React ???</div>
+        The main objective of ReactJS is to develop User Interfaces (UI) that
+        improves the speed of the apps. It uses virtual DOM (JavaScript object),
+        which improves the performance of the app. The JavaScript virtual DOM is
+        faster than the regular DOM. It uses component and data patterns that
+        improve readability and helps to maintain larger apps.
+
+        <div class="title">React Version History</div>
+        <ul>
+            <li>
+                Back in 2011, Jordan Walke, a software engineer at Facebook,
+                created this library to handle the increasing number of updates.
+            </li>
+            <li>
+                Their code needed to be upgraded immediately to become more
+                efficient and enhance the user experience. This marked the birth
+                of ReactJS.
+            </li>
+            <li>
+                It was first used by Facebook in 2011. Later, when Facebook
+                acquired Instagram, they too wanted to use React.
+            </li>
+            <li>
+                As the demand to use the technology grew with time, Facebook
+                officially made it an open-source language at JSConf in May
+                2013.
+            </li>
+            <li>
+                In 2014, React started to expand, and Atom, a hackable text
+                editor, was introduced.
+            </li>
+            <li>
+                In 2014, React Hot Loader was introduced. It is a plugin that
+                allows the live loading of React components.
+            </li>
+            <li>
+                In 2015, React Native was announced to enable easy development.
+                It was first made available for iOS and then launched for
+                Android in the same year. It was open-sourced the same year.
+            </li>
+            <li>
+                In 2016, the React.js conference was held in San Francisco.
+                Here, Draft.js was introduced. Later, with the introduction of
+                React Storybook and Blueprint, React was mainstream.
+            </li>
+            <li>
+                In 2017, Facebook launched React Fiber. The new set of
+                algorithms became the foundation of future improvements in the
+                React library. Airbnb also introduced React Sketch app, a new
+                open-source library. Netflix also removed React.js on the
+                client-side.
+            </li>
+            <li>
+                In 2018, Beyond React 16 was introduced at the Iceland
+                conference, and React 16.3.0 was released.
+            </li>
+            <li>In 2019, new React DevTools were released.</li>
+            <li>
+                In 2020, zero-bundle-size React server components were released
+                to get feedback from the React development community. On August
+                10, the React team announced the release of React v17.0. This
+                version was vital because it was introduced without any major
+                changes to the React API.
+            </li>
+        </ul>
+
+        <div class="title">React Installation</div>
+        Starting a new React project is very complicated, with so many build
+        tools. It uses many dependencies, configuration files, and other
+        requirements such as <b>Babel</b>, <b>Webpack</b>, <b>ESLint</b> before
+        writing a single line of React code. <b>Create React App CLI</b> tool
+        removes all that complexities and makes React app simple. The
+        <b>create-react-app</b> is an excellent tool, which allows us to create
+        and run React project very quickly. It does not take any configuration
+        manually. This tool is wrapping all of the required dependencies like
+        <b>Webpack</b>, <b>Babel</b> for React project itself and then we need
+        to focus on writing React code only. This tool sets up the development
+        environment, provides an excellent developer experience, and optimizes
+        the app for production.
+        <ul>
+            <li>
+                install NodeJS and NPM
+                <pre>
+                    Node version >= 8.10
+                    NPM version >= 5.6</pre
+                >
+                verify node and npm versions with
+                <pre>
+                    node --version
+                    npm --version</pre
+                >
+            </li>
+            <li>
+                install React
+                <pre>npm install -g create-react-app</pre>
+            </li>
+            <li>
+                create a new React project
+                <pre>create-react-app reactapp1</pre>
+            </li>
+            <li>
+                above two steps can be combined as
+                <pre>npx create-react-app reactapp1</pre>
+            </li>
+            <li>
+                running the server
+                <pre>
+                    cd reactapp1
+                    npm run start</pre
+                >
+            </li>
+            <li>
+                <b>NPM</b> is a package manager which starts the server and we
+                access the application at default server http://localhost:3000
+            </li>
+            <li>
+                if we want to make the project for the production mode, we type
+                the following command to generate the production build, which is
+                best optimized
+                <pre>npm run build</pre>
+            </li>
+        </ul>
+
+        <div class="title">Features of React</div>
+        <ul>
+            <li>JSX [JavaScript XML] (JavaScript Syntax Extension)</li>
+            <li>Virtual DOM</li>
+            <li>One-way data binding</li>
+            <li>Performance</li>
+            <li>Extensions</li>
+            <li>Conditional statements</li>
+            <li>Components</li>
+            <li>Simplicity</li>
+        </ul>
+
+        <div class="title">React advantages and dis-advantages</div>
+        <b>Advantage of ReactJS </b>
+        <ul>
+            <li>easy to learn and use</li>
+            <li>creating dynamic web applications becomes easier</li>
+            <li>reusable components</li>
+            <li>performance enhancement</li>
+            <li>support of handy tools</li>
+            <li>known to be seo friendly</li>
+            <li>benefit of having JavaScript library</li>
+            <li>scope for testing the codes</li>
+        </ul>
+        <b>Dis-advantages of ReactJS</b>
+        <ul>
+            <li>high pace of development</li>
+            <li>poor documentation</li>
+            <li>view part</li>
+            <li>jsx as a barrier</li>
+        </ul>
+
+        <div class="title">React JSX</div>
+        All of the React components have a render function. The render function
+        specifies the HTML output of a React component. JSX(JavaScript
+        Extension), is a React extension which allows writing JavaScript code
+        that looks like HTML. In other words, JSX is an HTML-like syntax used by
+        React that extends ECMAScript so that HTML-like syntax can co-exist with
+        JavaScript/React code. The syntax is used by preprocessors (i.e.,
+        transpilers like babel) to transform HTML-like syntax into standard
+        JavaScript objects that a JavaScript engine will parse.
+        <pre>
+            JSX File
+            &lt;div>Hello JavaTpoint&lt;/div>
+            
+            Corresponding Output
+            React.createElement("div", null, "a2rp: an Ashish Ranjan presentation");</pre
+        >
+
+        <h3>Nested Elements in JSX</h3>
+        To use more than one element, we need to wrap it with one container
+        element.
+        <pre>
+            import React, { Component } from 'react';
+            class App extends Component {
+                render() {
+                    return (
+                        &lt;div>
+                            &lt;h1>a2rp: an Ashish Ranjan presentation&lt;/h1>
+                            &lt;h2>Training Institutes&lt;/h2>
+                            &lt;p>This website contains the best CS tutorials.&lt;/p>
+                        &lt;/div>
+                    );
+                }
+            }
+            export default App;</pre
+        >
+
+        <h3>JSX Attributes</h3>
+        JSX use attributes with the HTML elements same as regular HTML. JSX uses
+        camelcase naming convention for attributes rather than standard naming
+        convention of HTML. A <b>class</b> in HTML becomes <b>className</b> in
+        JSX because the <b>class</b> is the reserved keyword in
+        <b>JavaScript</b>. We can also use our own custom attributes in JSX. For
+        custom attributes, we need to use <b>data-</b> prefix.
+        <pre>
+            &lt;p data-demoAttribute = "demo">
+                a2rp: an Ashish Ranjan presentation
+            &lt;/p></pre
+        >
+        In JSX, we can specify attribute values in two ways:
+        <ol>
+            <li>
+                as string literals
+                <pre>
+const element = &lth3 className = "firstAttribute">a2rp&lt;/h3>;</pre
+                >
+            </li>
+            <li>
+                as expressions
+                <pre>
+const element = &lth3 className = "firstAttribute">{30*40}/h3>;</pre
+                >
+            </li>
+        </ol>
+
+        <h3>JSX Comments</h3>
+        JSX allows us to use comments that begin with <b>/*</b> and ends with
+        <b>*/</b> and wrapping them in curly braces <b>{}</b> just like in the
+        case of JSX expressions.
+        <pre>{/*this is a comment in jsx*/}</pre>
+
+        <h3>JSX Styling</h3>
+        React always recommends to use inline styles. To set inline styles, we
+        need to use <b>camelCase</b> syntax. React automatically allows
+        appending <b>px</b> after the number value on specific elements.
+        <pre>
+            
+function App() {
+    const style1 = {
+        fontStyle: "italics",
+        color: "orangered"
+    };
+    return (
+        &lt;div className="App">
+            &lt;div style={style1}>a2rp: an Ashish Ranjan presentation&lt;/div>
+        &lt;/div>
+    );
+}
+
+export default App;
+
+        </pre>
+
+        <div class="title">Ways of styling React Component</div>
+        <ul>
+            <li>Inline CSS</li>
+            <li>Normal CSS</li>
+            <li>CSS in JS</li>
+            <li>Styled Components</li>
+            <li>CSS module</li>
+            <li>Sass & SCSS</li>
+            <li>Less</li>
+            <li>Stylable</li>
+        </ul>
+
+        <div class="title">React Components</div>
+        The component-based approach was introduced to overcome the issue of
+        traditional DOM structure. In this approach, the entire application is
+        divided into a small logical group of code, which is known as
+        components. A Component is considered as the core building blocks of a
+        React application. It makes the task of building UIs much easier. Each
+        component exists in the same space, but they work independently from one
+        another and merge all in a parent component, which will be the final UI
+        of our application. Every React component has its own structure, methods
+        as well as APIs. They can be reusable as per our need. In ReactJS, we
+        have mainly two types of components. They are
+        <ul>
+            <li>
+                <b>Functional Components</b>: In React, function components are
+                a way to write components that only contain a render method and
+                don't have their own state. They are simply JavaScript functions
+                that may or may not receive data as parameters. We can create a
+                function that takes props(properties) as input and returns what
+                should be rendered. 
+                <pre>
+                    function FunctionalComponent (props) {
+                        return &lt;h1>Welcome to the , {props.name}</h1>;  
+                    }  
+                </pre>
+                The <b>functional component</b> is also known as a <b>stateless component</b> because they do not hold or manage state. 
+            </li>
+            <li><b>Class Components</b>: Class components are more complex than functional components. 
+                It requires us to extend from <b>React.Component</b> and create a render function which returns a React element. 
+                We can pass data from one class to other class components. We can create a class by defining a class that extends Component and has a render function.
+                <pre>
+                    class MyComponent extends React.Component {
+                        render() {
+                            return (
+                                &lt;div>This is main component.&lt;/div>
+                            );
+                        }
+                    }</pre>
+                The <b>class component</b> is also known as a <b>stateful component</b> because they can hold or manage local state.
+            </li>
+        </ul>
+
+        <div class="title">React State</div>
+        The state is an updatable structure that is used to contain data or information about the component. The state in a component can change over time. The change in state over time can happen as a response to user action or system event. A component with the state is known as <b>stateful components</b>. It is the heart of the react component which determines the behavior of the component and how it will render. They are also responsible for making a component dynamic and interactive. It can be set by using the <b>setState()</b> method and calling <b>setState()</b> method <b>triggers UI updates</b>.
+
+        <div class="title">React Props</div>
+        <b>Props</b> stand for <b>Properties</b>. They are <b>read-only</b>. It is <b>an object</b> which stores the value of attributes of a tag and work similar to the HTML attributes. It gives a way to pass data from one component to other components. It is similar to function arguments. Props are passed to the component in the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component. Inside the components, we can add attributes called <b>props</b>. These attributes are available in the component as <b>props</b> and can be used to render dynamic data in our render method.
+        <h3>Default Props</h3>
+        It is not necessary to always add props in the render() element. We can also set default props directly on the component.
+        <h3>State and Props</h3>
+        It is possible to combine both state and props in our app. We can set the state in the parent component and pass it in the child component using props.
+
+        <div class="title">State vs Props</div>
+        <h3>State</h3>
+        The state is an updatable structure that is used to contain data or information about the component and can change over time. The change in state can happen as a response to user action or system event. It is the heart of the react component which determines the behavior of the component and how it will render. A state must be kept as simple as possible. It represents the component's local state or information. It can only be accessed or modified inside the component or by the component directly.
+        <h3>Props</h3>
+        Props are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It allows passing data from one component to other components. It is similar to function arguments and can be passed to the component the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component.
+
+        <div class="title">React Component API</div>
+        ReactJS component is a top-level API. It makes the code completely individual and reusable in the application. It includes various methods for:
+        <ul>
+            <li>Creating elements</li>
+            <li>Transforming elements</li>
+            <li>Fragments</li>
+        </ul>
+
+        <div class="title">React Component Life-Cycle</div>
+        In ReactJS, every component creation process involves various lifecycle methods. 
+        These lifecycle methods are termed as component's lifecycle. 
+        These lifecycle methods are called at various points during a component's life. 
+        The lifecycle of the component is divided into four phases. They are:
+        <ul>
+            <li><h3>Initial Phase</h3> It is the birth phase of the lifecycle of a ReactJS component. Here, the component starts its journey on a way to the DOM. In this phase, a component contains the default Props and initial State. The initial phase only occurs once.</li>
+            <li><h3>Mounting Phase</h3> In this phase, the instance of a component is created and inserted into the DOM.</li>
+            <li><h3>Updating Phase</h3> Here, we get new Props and change State. This phase also allows to handle user interaction and provide communication with the components hierarchy. The main aim of this phase is to ensure that the component is displaying the latest version of itself. Unlike the Birth or Death phase, this phase repeats again and again.</li>
+            <li><h3>Unmounting Phase</h3> It is the final phase of the react component lifecycle. It is called when a component instance is destroyed and unmounted from the DOM.</li>
+        </ul>
+
+        <div class="title">React Forms</div>
+        Forms are an integral part of any modern web application. It allows the users to interact with the application as well as gather information from the users. Forms can perform many tasks that depend on the nature of our business requirements and logic such as authentication of the user, adding user, searching, filtering, booking, ordering, etc. A form can contain text fields, buttons, checkbox, radio button, etc. 
+        <h3>Creating Form</h3>
+        React offers a stateful, reactive approach to build a form. The component rather than the DOM usually handles the React form. 
+        In React, the form is usually implemented by using controlled components.
+        <h3>There are mainly two types of form input in React.</h3>
+        <ul>
+            <li>
+                <h3>Uncontrolled</h3>
+                We need to use a <b>ref</b> to get form values from the DOM. There is no need to write an event handler for every state update. We can use a <b>ref</b> to access the input field value of the form from the DOM.
+            </li>
+            <li>
+                <h3>Controlled</h3>
+                In this, the input form element is handled by the component rather than the DOM. Here, the mutable state is kept in the state property and will be updated only with <b>setState()</b> method. Controlled components have functions that govern the data passing into them on every <b>onChange</b> event, rather than grabbing the data only once, e.g., when we click a submit button. This data is then saved to state and updated with <b>setState()</b> method. This makes component have better control over the form elements and data. A controlled component takes its current value through props and notifies the changes through callbacks like an <b>onChange</b> event. A parent component "controls" this change by handling the callback and managing its own state and then passing the new values as props to the controlled component. It is also called as a <b>dumb component</b>.
+            </li>
+        </ul>
+
+        <div class="title">React Events</div>
+        An event is an action that could be triggered as a result of the user action or system generated event. For example, a mouse click, loading of a web page, pressing a key, window resizes, and other interactions are called events. React has its own event handling system which is very similar to handling events on DOM elements. The react event handling system is known as <b>Synthetic Events</b>. The <b>synthetic event</b> is a cross-browser wrapper of the browser's native event. Handling events with react have some syntactic differences from handling events on DOM. These are:
+        <ul>
+            <li>React events are named as <b>camelCase</b> instead of lowercase.</li>
+            <li>With <b>JSX</b>, a function is passed as the event handler instead of a string.</li>
+            <li>In react, we cannot return false to prevent the default behavior. We must call <b>preventDefault</b> event explicitly to prevent the default behavior.</li>
+        </ul>
+
+        <div class="title">React Conditional Rendering</div>
+        In React, conditional rendering works the same way as the conditions work in JavaScript. We use JavaScript operators to create elements representing the current state, and then React Component update the UI to match them. There is more than one way to do conditional rendering in React. They are given below.
+        <ul>
+            <li>if</li>
+            <li>ternary operator</li>
+            <li>logical && operator</li>
+            <li>switch case operator</li>
+            <li>Conditional Rendering with enums</li>
+        </ul>
+
+        <div class="title">React Lists</div>
+        Lists are used to display data in an ordered format and mainly used to display menus on websites. In React, Lists can be created in a similar way as we create lists in JavaScript. The map() function is used for traversing the lists.
+
+        <div class="title">React Keys</div>
+        A key is a unique identifier. In React, it is used to identify which items have changed, updated, or deleted from the Lists. It is useful when we dynamically create components or when the user alters the list. It also helps to determine which components in a collection needs to be re-rendered instead of re-rendering the entire set of components every time. The best way to pick a key as a string that uniquely identifies the items in the list.
+
+        <div class="title">React Fragments</div>
+        In React, to render something on the screen, we need to use a render method inside the component. This render method can return single elements or multiple elements. The render method will only render a single root node inside it at a time. React introduced Fragments from the 16.2 and above version. Fragments allow us to group a list of children without adding extra nodes to the DOM.
+        <pre>
+            &lt;React.Fragment>  
+                &lt;h2> child1 &lt;/h2>   
+                &lt;p> child2 &lt;/p>   
+                .. ..... .... ...  
+            &lt;/React.Fragment>  
+
+            short hand syntax
+            &lt;>  
+                &lt;h2> child1 &lt;/h2>   
+                &lt;p> child2 &lt;/p>   
+                .. ..... .... ...  
+            &lt;/>
+        </pre>
+        <ul>
+            <li>It makes the execution of code faster as compared to the div tag.</li>
+            <li>It takes less memory.</li>
+        </ul>
+        We need a key for mapping a collection to an array of fragments such as to create a description list. If we need to provide keys, we have to declare the fragments with the explicit &lt;React.Fragment key={item.id}> syntax. Key is the only attributes that can be passed with the Fragments. The shorthand syntax does not accept key attributes.
+
+        <div class="title">React Router</div>
+        React Router plays an important role to display multiple views in a single page application. Without React Router, it is not possible to display multiple views in React applications. React contains three different packages for routing. These are:
+        <ul>
+            <li><b>react-router:</b> It provides the core routing components and functions for the React Router applications.</li>
+            <li><b> react-router-native:</b> It is used for mobile applications.</li>
+            <li><b>react-router-dom:</b> It is used for web applications design.</li>
+        </ul>
+        It is not possible to install react-router directly in your application. To use react routing, first, you need to install react-router-dom modules in your application. There are two types of router components:
+        <ul>
+            <li><b>&lt;BrowserRouter>:</b> It is used for handling the dynamic URL.</li>
+            <li><b>&lt;HashRouter>:</b> It is used for handling the static request.</li>
+        </ul>
+        <h3>Route</h3>
+        Route is used to define and render component based on the specified path. It will accept components and render to define what should be rendered.
+
+        <h3>&lt;Link> component</h3>
+        This component is used to create links which allow to navigate on different URLs and render its content without reloading the webpage.
+
+        <h3>&lt;Link> vs &lt;NavLink></h3>
+        The Link component allows navigating the different routes on the websites, whereas NavLink component is used to add styles to the active routes.
+
+        <h3>React Router Routes</h3>
+        The &lt;Routes> component is used to render components only when the path will be matched. Otherwise, it returns to the not found component.
+
+        <h3>React Router &lt;Redirect></h3>
+        A &lt;Redirect> component is used to redirect to another route in our application to maintain the old URLs. It can be placed anywhere in the route hierarchy.
+
+        <h3>Nested Routing in React</h3>
+        Nested routing allows us to render sub-routes in our application
+
+        <div class="title">React Styling</div>
+        The <b>style</b> attribute is the most used attribute for styling in React applications, which adds dynamically-computed styles at render time. It accepts a JavaScript object in camelCased properties rather than a CSS string. There are many ways available to add styling to our React App or Component with CSS. Four ways to style React Components, are given below:
+        <ul>
+            <li>Inline Styling</li>
+            <li>CSS Stylesheet</li>
+            <li>CSS Module</li>
+            <li>Styled Components</li>
+        </ul>
+
+        <div class="title">React Map</div>
+        A map is a data collection type where data is stored in the form of pairs. It contains a unique key. The value stored in the map must be mapped to the key. We cannot store a duplicate pair in the map(). It is because of the uniqueness of each stored key. It is mainly used for fast searching and looking up data.
+
+        <div class="title">React Table</div>
+        A table is an arrangement which organizes information into rows and columns. It is used to store and display data in a structured format. The react-table is a lightweight, fast, fully customizable (JSX, templates, state, styles, callbacks), and extendable Datagrid built for React. It is fully controllable via optional props and callbacks.
+
+        <div class="title">React Higher-Order Components</div>
+        It is also known as <b>HOC</b>. In React, <b>HOC</b> is an advanced technique for reusing component logic. It is a function that takes a component and returns a new component. According to the official website, it is not the feature(part) in React API, but a pattern that emerges from React compositional nature. They are similar to JavaScript functions used for adding additional functionalities to the existing component. A higher order component function accepts another function as an argument. The map function is the best example to understand this. The main goal of this is to decompose the component logic into simpler and smaller functions that can be reused as you need.
+
+        <div class="title">React Code Splitting</div>
+        As our app grows, our bundle will grow too, especially when we are using large third-party libraries. If the bundle size gets large, it takes a long time to load on a webpage. For avoiding the large bundling, it'?'s good to start <b>splitting</b> our bundle. <b>React 16.6.0</b>, released in October 2018, and introduced a way of performing <b>code splitting</b>. <b>Code-Splitting</b> is a feature supported by <b>Webpack</b> and <b>Browserify</b>, which can create multiple bundles that can be dynamically loaded at runtime. <b>Code-Splitting</b> uses <b>React.lazy</b> and <b>Suspense</b> tool/library, which helps us to load a dependency lazily and only load it when needed by the user.
+        <pre>
+            ...
+            const ExampleComponent = React.lazy(() => import('./ExampleComponent')); 
+            ...
+            &lt;Suspense fallback={&lt;div>Loading...&lt;/div>}>
+            ...
+            &lt;/Suspense>
+            ...
+        </pre>
+        The fallback prop accepts the React elements which we want to render while waiting for the component to load.
+        <h3>Error boundaries</h3>
+        If any module fails to load, for example, due to network failure, we will get an error. We can handle these errors with Error Boundaries. Once we have created the Error Boundary, we can use it anywhere above our lazy components to display an error state.
+        <h3>Named Export</h3>
+        Currently, <b>React.lazy</b> supports default exports only. If any module we want to import using named exports, we need to create an intermediate module that re-exports it as the default.
+
+        <div class="title">React Context</div>
+        Context allows passing data through the component tree without passing props down manually at every level. There are two main steps to use the React context into the React application:
+        <ul>
+            <li>Setup a context provider and define the data which we want to store.</li>
+            <li>Use a context consumer whenever we need the data from the store.</li>
+        </ul>
+
+        <div class="title">React Hooks</div>
+        Hooks are the new feature introduced in the React 16.8 version. It allows us to use state and other React features without writing a class. Hooks are the functions which "hook into" React state and lifecycle features from function components. It does not work inside classes.
+        <h3>Rules of Hooks</h3>
+        <ul>
+            <li>Only call Hooks at the top level</li>
+            <li>Only call Hooks from React functions</li>
+        </ul>
+        <h3>Hooks State</h3>
+        Hook state is the new way of declaring a state in React app. Hook uses <b>useState()</b> functional component for setting and retrieving state.
+        <h3>Hooks Effect</h3>
+        The Effect Hook allows us to perform side effects (an action) in the function components. It does not use components lifecycle methods which are available in class components. Side effects have common features which the most web applications need to perform, such as:
+        <ul>
+            <li>Updating the DOM</li>
+            <li>Fetching and consuming data from a server API</li>
+            <li>Setting up a subscription</li>
+            <li>Et Cetera</li>
+        </ul>
+        <h3>Custom Hooks</h3>
+        A custom Hook is a JavaScript function. The name of custom Hook starts with "use" which can call other Hooks. A custom Hook is just like a regular function, and the word "use" in the beginning tells that this function follows the rules of Hooks. Building custom Hooks allows us to extract component logic into reusable functions.
+        <h3>Built-in Hooks</h3>
+        <ul>
+            <li>
+                Basic Hooks
+                <ul>
+                    <li>useState</li>
+                    <li>useEffect</li>
+                    <li>useContext</li>
+                </ul>
+            </li>
+            <li>
+                Additional Hooks
+                <ul>
+                    <li>useReducer</li>
+                    <li>useCallback</li>
+                    <li>useMemo</li>
+                    <li>useRef</li>
+                    <li>useImperativeHandle</li>
+                    <li>useLayoutEffect</li>
+                    <li>useDebugValue</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="title">React Flux</div>
+        Flux is an application architecture that Facebook uses internally for building the client-side web application with React. It is neither a library nor a framework. It is a kind of architecture that complements React as view and follows the concept of Unidirectional Data Flow model. It is useful when the project has dynamic data, and we need to keep the data updated in an effective manner. It reduces the runtime errors. Flux applications have three major roles in dealing with data:
+        <ul>
+            <li>Dispatcher</li>
+            <li>Stores</li>
+            <li>Views (React components)</li>
+        </ul>
+
+        <div class="title">React Redux</div>
+        Redux is an open-source JavaScript library used to manage application state. React uses Redux for building the user interface. The components of Redux architecture are
+        <ul>
+            <li>STORE</li>
+            <li>ACTION</li>
+            <li>REDUCER</li>
+        </ul>
+
+
+        <script>
+            const scrollingElement = document.scrollingElement || document.body;
+            scrollingElement.scrollTop = scrollingElement.scrollHeight;
+        </script>
+    </body>
+</html>
