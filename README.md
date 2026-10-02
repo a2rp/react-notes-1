@@ -1,5 +1,7 @@
 # React Notes
 
+![React Notes preview](screenshot.png)
+
 A focused static reference page for revising React fundamentals, JSX, components, state, props, forms, events, routing, styling, hooks, context and Redux.
 
 ## Features
@@ -26,7 +28,6 @@ Live URL: [https://a2rp.github.io/react-notes-1/](https://a2rp.github.io/react-n
 
 ## Preview
 
-![React Notes preview](screenshot.png)
 
 ## Links
 
