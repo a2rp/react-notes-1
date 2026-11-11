@@ -16,10 +16,10 @@
 <style>
 :root{color-scheme:dark;--page:#0d0d0d;--surface:#1a1a1a;--soft:#151515;--border:#373737;--strong:#5a5a5a;--text:#f3f3f3;--muted:#ababab;--accent:#b4b4b4;--header:72px;--shadow:0 18px 50px rgba(0,0,0,.26)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;background:radial-gradient(circle at 12% 0,#222222 0,var(--page) 34rem),var(--page);color:var(--text);font:15px/1.75 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body:before{position:fixed;inset:0;pointer-events:none;content:"";opacity:.24;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:28px 28px}a{color:inherit}.skipLink{position:fixed;z-index:200;top:10px;left:10px;padding:8px 12px;border:1px solid var(--strong);border-radius:8px;background:var(--surface);transform:translateY(-150%)}.skipLink:focus{transform:translateY(0)}
-.siteHeader{position:fixed;z-index:100;top:0;right:0;left:0;height:var(--header);display:flex;align-items:center;border-bottom:1px solid rgba(171, 171, 171, .18);background:rgba(13, 13, 13, .92);box-shadow:0 8px 30px rgba(0,0,0,.2);backdrop-filter:blur(14px)}.headerInner{width:min(1380px,calc(100% - 32px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:inline-flex;align-items:center;gap:12px;color:var(--text);font-weight:800;text-decoration:none}.brand img{width:38px;height:38px;object-fit:contain;padding:6px;border:1px solid var(--border);border-radius:10px;background:#171717;filter:grayscale(1)}.headerActions{display:flex;align-items:center;gap:10px}.headerButton,.headerLink{display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:7px 12px;border:1px solid var(--border);border-radius:9px;background:rgba(26, 26, 26, .85);color:var(--text);font:inherit;text-decoration:none;cursor:pointer;transition:border-color .2s,box-shadow .2s,text-shadow .2s}.headerButton:hover,.headerLink:hover,.headerButton:focus-visible,.headerLink:focus-visible{border-color:var(--accent);box-shadow:0 0 18px rgba(180, 180, 180, .16);text-shadow:0 0 14px rgba(180, 180, 180, .55);outline:0}
-.pageLayout{position:relative;width:min(1380px,calc(100% - 32px));margin:auto;padding:calc(var(--header) + 30px) 0 48px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px}.sectionNav{position:sticky;top:calc(var(--header) + 24px);align-self:start;max-height:calc(100vh - var(--header) - 48px);overflow:auto;padding:16px;border:1px solid var(--border);border-radius:14px;background:rgba(21, 21, 21, .84);box-shadow:var(--shadow)}.sectionNav p{margin:0 0 12px;color:var(--accent);font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.sectionLinks{display:grid;gap:3px}.sectionLinks a{display:block;padding:7px 9px;border:1px solid transparent;border-radius:7px;color:var(--muted);font-size:.86rem;line-height:1.3;text-decoration:none;transition:border-color .2s,box-shadow .2s,text-shadow .2s,color .2s}.sectionLinks a:hover,.sectionLinks a:focus-visible{border-color:var(--strong);color:var(--text);box-shadow:0 0 14px rgba(180, 180, 180, .12);text-shadow:0 0 12px rgba(180, 180, 180, .45);outline:0}.notes{min-width:0;padding:0 clamp(0px,2vw,26px) 20px;color:#dfdfdf}.notes>.title{scroll-margin-top:calc(var(--header) + 22px);margin:34px 0 18px;padding:15px 18px;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:12px;background:linear-gradient(120deg,var(--surface),rgba(26, 26, 26, .52));box-shadow:0 12px 30px rgba(0,0,0,.16);color:var(--text);font-size:clamp(1.3rem,2.2vw,1.8rem);font-weight:800;line-height:1.25}.notes>.title:first-child{display:inline-block;margin-top:0;padding:7px 11px;border:1px solid var(--strong);border-radius:999px;background:rgba(180, 180, 180, .12);color:var(--accent);font-size:.8rem;letter-spacing:.04em}.notes h3:not(.title){scroll-margin-top:calc(var(--header) + 22px);margin:26px 0 8px;color:#f8f8f8;font-size:1.05rem}.notes ul,.notes ol{margin:12px 0 18px;padding-left:26px}.notes li{margin:7px 0}.notes b{color:#fff}.notes pre{overflow-x:auto;margin:14px 0;padding:14px 16px;border:1px solid var(--border);border-radius:10px;background:#101010;color:#dedede;font:.88rem/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;box-shadow:inset 0 0 20px rgba(0,0,0,.2)}.notes code{padding:2px 5px;border-radius:5px;background:rgba(180, 180, 180, .1);color:#dddddd}
+.siteHeader{position:fixed;z-index:100;top:0;right:0;left:0;height:var(--header);display:flex;align-items:center;border-bottom:1px solid rgba(171, 171, 171, .18);background:rgba(13, 13, 13, .92);box-shadow:0 8px 30px rgba(0,0,0,.2);backdrop-filter:blur(14px)}.headerInner{width:min(1380px,calc(100% - 32px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:inline-flex;align-items:center;gap:12px;color:var(--text);font-weight:800;text-decoration:none}.brand img{width:38px;height:38px;object-fit:contain;padding:6px;border:1px solid var(--border);border-radius:10px;background:#171717;filter:grayscale(1)}.headerActions{display:flex;align-items:center;gap:10px}.headerButton,.headerLink{display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:7px 12px;border:1px solid var(--border);border-radius:9px;background:rgba(26, 26, 26, .85);color:var(--text);font:inherit;text-decoration:none;cursor:pointer;transition:border-color .2s,box-shadow .2s,text-shadow .2s}.headerButton{display:none}.headerButton:hover,.headerLink:hover,.headerButton:focus-visible,.headerLink:focus-visible{border-color:var(--accent);box-shadow:0 0 18px rgba(180, 180, 180, .16);text-shadow:0 0 14px rgba(180, 180, 180, .55);outline:0}
+.pageLayout{position:relative;width:min(1380px,calc(100% - 32px));margin:auto;padding:calc(var(--header) + 30px) 0 48px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px}.sectionNav{position:sticky;top:calc(var(--header) + 24px);align-self:start;max-height:calc(100vh - var(--header) - 48px);overflow:auto;padding:16px;border:1px solid var(--border);border-radius:14px;background:rgba(21, 21, 21, .84);box-shadow:var(--shadow)}.sectionNav p{margin:0 0 12px;color:var(--accent);font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.sectionLinks{display:grid;gap:3px}.sectionLinks a{display:block;padding:7px 9px;border:1px solid transparent;border-radius:7px;color:var(--muted);font-size:.86rem;line-height:1.3;text-decoration:none;transition:border-color .2s,box-shadow .2s,text-shadow .2s,color .2s}.sectionLinks a:hover,.sectionLinks a:focus-visible{border-color:var(--strong);color:var(--text);box-shadow:0 0 14px rgba(180, 180, 180, .12);text-shadow:0 0 12px rgba(180, 180, 180, .45);outline:0}.notes{min-width:0;padding:0 clamp(0px,2vw,26px) 20px;color:#dfdfdf}.notes>.title{scroll-margin-top:calc(var(--header) + 22px);margin:34px 0 18px;padding:15px 18px;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:12px;background:linear-gradient(120deg,var(--surface),rgba(26, 26, 26, .52));box-shadow:0 12px 30px rgba(0,0,0,.16);color:var(--text);font-size:clamp(1.3rem,2.2vw,1.8rem);font-weight:800;line-height:1.25}.notes>.lastUpdated{display:inline-block;margin:0 0 18px;padding:7px 11px;border:1px solid var(--strong);border-radius:999px;background:rgba(180, 180, 180, .12);color:var(--accent);font-size:.8rem;font-weight:700;letter-spacing:.04em}.notes h3:not(.title){scroll-margin-top:calc(var(--header) + 22px);margin:26px 0 8px;color:#f8f8f8;font-size:1.05rem}.notes ul,.notes ol{margin:12px 0 18px;padding-left:26px}.notes li{margin:7px 0}.notes b{color:#fff}.notes pre{overflow-x:auto;margin:14px 0;padding:14px 16px;border:1px solid var(--border);border-radius:10px;background:#101010;color:#dedede;font:.88rem/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;box-shadow:inset 0 0 20px rgba(0,0,0,.2)}.notes :not(pre)>code{padding:2px 5px;border-radius:5px;background:rgba(180, 180, 180, .1);color:#dddddd}
 .siteFooter{width:min(1380px,calc(100% - 32px));margin:auto;padding:22px 0 34px;border-top:1px solid var(--border);color:var(--muted)}.footerInner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.copyright{margin:0;font-size:.85rem}.copyright a{color:var(--text);font-weight:700;text-decoration:none}.copyright a:hover{color:var(--accent);text-shadow:0 0 12px rgba(180, 180, 180, .4)}.footerLinks{display:flex;flex-wrap:wrap;gap:7px}.footerLinks a{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--border);border-radius:9px;color:var(--text);font-size:.74rem;font-weight:800;text-decoration:none;transition:border-color .2s,box-shadow .2s,text-shadow .2s}.footerLinks a:hover,.footerLinks a:focus-visible{border-color:var(--accent);box-shadow:0 0 16px rgba(180, 180, 180, .18);text-shadow:0 0 12px rgba(180, 180, 180, .55);outline:0}.goTop{position:fixed;z-index:90;right:20px;bottom:20px;width:42px;height:42px;border:1px solid var(--strong);border-radius:50%;background:var(--surface);color:var(--text);cursor:pointer;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s,border-color .2s,box-shadow .2s,text-shadow .2s}.goTop.visible{opacity:1;pointer-events:auto}.goTop:hover,.goTop:focus-visible{border-color:var(--accent);box-shadow:0 0 20px rgba(180, 180, 180, .2);text-shadow:0 0 12px rgba(180, 180, 180, .6);outline:0}
-@media(max-width:800px){.pageLayout{display:block;padding-top:calc(var(--header) + 22px)}.sectionNav{position:fixed;z-index:95;top:var(--header);bottom:0;left:0;width:min(300px,86vw);max-height:none;border-radius:0 14px 14px 0;transform:translateX(-105%);transition:transform .2s,box-shadow .2s}.navOpen .sectionNav{transform:translateX(0);box-shadow:14px 0 42px rgba(0,0,0,.4)}.notes{padding:0}.headerLink{display:none}}@media(max-width:520px){.headerInner,.pageLayout,.siteFooter{width:calc(100% - 22px)}.siteHeader{--header:66px}.brand img{width:34px;height:34px}.brand span{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.notes>.title{padding:13px 14px}.footerInner{align-items:flex-start;flex-direction:column}}
+@media(max-width:800px){.pageLayout{display:block;padding-top:calc(var(--header) + 22px)}.sectionNav{position:fixed;z-index:95;top:var(--header);bottom:0;left:0;width:min(300px,86vw);max-height:none;border-radius:0 14px 14px 0;transform:translateX(-105%);transition:transform .2s,box-shadow .2s}.navOpen .sectionNav{transform:translateX(0);box-shadow:14px 0 42px rgba(0,0,0,.4)}.notes{padding:0}.headerLink{display:none}.headerButton{display:inline-flex}}@media(max-width:520px){.headerInner,.pageLayout,.siteFooter{width:calc(100% - 22px)}.siteHeader{--header:66px}.brand img{width:34px;height:34px}.brand span{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.notes>.title{padding:13px 14px}.footerInner{align-items:flex-start;flex-direction:column}}
 </style>
 </head>
 <body>
@@ -28,8 +28,8 @@
 <div class='pageLayout'>
 <aside class="sectionNav" id="sectionNav" aria-label="React notes sections"><p>Study guide</p><nav class="sectionLinks" id="sectionLinks"></nav></aside>
 <main class='notes' id='notes'>
-<div class="title">Last Update: September 25, 2026</div>
-        <h3 class="title">React</h3>
+<p class="lastUpdated">Last updated: November 11, 2026</p>
+        <h1 class="title">React</h1>
         React (also known as React.js or ReactJS) is a free and open-source
         front-end JavaScript library for building user interfaces based on
         components. It is maintained by Meta (formerly Facebook) and a community
@@ -39,14 +39,14 @@
         and rendering components to the DOM, React applications often rely on
         libraries for routing and other client-side functionality.
 
-        <div class="title">Why do we use React?</div>
-        The main objective of ReactJS is to develop User Interfaces (UI) that
-        improves the speed of the apps. It uses virtual DOM (JavaScript object),
-        which improves the performance of the app. The JavaScript virtual DOM is
-        faster than the regular DOM. It uses component and data patterns that
-        improve readability and helps to maintain larger apps.
+        <h2 class="title">Why do we use React?</h2>
+        React lets developers describe a user interface as components derived
+        from props and state. When those values change, React renders the
+        updated UI and reconciles the result with the DOM. This model supports
+        reusable components and predictable data flow; it does not guarantee
+        that every React app is faster than a hand-written DOM implementation.
 
-        <div class="title">React Version History</div>
+        <h2 class="title">React Version History</h2>
         <ul>
             <li>
                 Back in 2011, Jordan Walke, a software engineer at Facebook,
@@ -97,112 +97,79 @@
             </li>
             <li>In 2019, new React DevTools were released.</li>
             <li>
-                In 2020, zero-bundle-size React server components were released
-                to get feedback from the React development community. On August
-                10, the React team announced the release of React v17.0. This
-                version was vital because it was introduced without any major
-                changes to the React API.
+                React 17 was released in 2020 as a gradual-upgrade release. It
+                focused on making upgrades easier and did not add new
+                developer-facing features.
+            </li>
+            <li>
+                React 18 was released in March 2022. It introduced the new root
+                API and concurrent rendering capabilities, including automatic
+                batching.
+            </li>
+            <li>
+                React 19 became stable in December 2024. It added form Actions,
+                new resource APIs, and hooks such as <b>useActionState</b> and
+                <b>useOptimistic</b>. See the
+                <a href="https://react.dev/blog/2024/12/05/react-19">React 19 release notes</a>
+                for details.
             </li>
         </ul>
 
-        <div class="title">React Installation</div>
-        Starting a new React project is very complicated, with so many build
-        tools. It uses many dependencies, configuration files, and other
-        requirements such as <b>Babel</b>, <b>Webpack</b>, <b>ESLint</b> before
-        writing a single line of React code. <b>Create React App CLI</b> tool
-        removes all that complexities and makes React app simple. The
-        <b>create-react-app</b> is an excellent tool, which allows us to create
-        and run React project very quickly. It does not take any configuration
-        manually. This tool is wrapping all of the required dependencies like
-        <b>Webpack</b>, <b>Babel</b> for React project itself and then we need
-        to focus on writing React code only. This tool sets up the development
-        environment, provides an excellent developer experience, and optimizes
-        the app for production.
+        <h2 class="title">Starting a React project</h2>
+        React is a UI library; a complete application also needs decisions
+        about routing, data loading, rendering, and deployment. For most new
+        production apps, the React team recommends starting with a framework.
+        If a client-only app or a learning project is a better fit, a build
+        tool such as Vite is a practical starting point. Create React App was
+        deprecated for new apps in February 2025 and is now in maintenance
+        mode. Read the React team's
+        <a href="https://react.dev/blog/2025/02/14/sunsetting-create-react-app">Create React App announcement</a>
+        and the guide to
+        <a href="https://react.dev/learn/build-a-react-app-from-scratch">building an app from scratch</a>.
         <ul>
             <li>
-                install NodeJS and NPM
-                <pre>
-                    Node version >= 8.10
-                    NPM version >= 5.6</pre
-                >
-                verify node and npm versions with
-                <pre>
-                    node --version
-                    npm --version</pre
-                >
+                Install a currently supported Node.js release from the
+                <a href="https://nodejs.org/en/download">official downloads page</a>.
+                Check the version with <code>node --version</code> and
+                <code>npm --version</code>.
             </li>
             <li>
-                install React
-                <pre>npm install -g create-react-app</pre>
+                Create and run a Vite React app:
+                <pre><code>npm create vite@latest my-app -- --template react
+cd my-app
+npm install
+npm run dev</code></pre>
+                Vite prints the local development URL in the terminal.
             </li>
             <li>
-                create a new React project
-                <pre>create-react-app reactapp1</pre>
-            </li>
-            <li>
-                above two steps can be combined as
-                <pre>npx create-react-app reactapp1</pre>
-            </li>
-            <li>
-                running the server
-                <pre>
-                    cd reactapp1
-                    npm run start</pre
-                >
-            </li>
-            <li>
-                <b>NPM</b> is a package manager which starts the server and we
-                access the application at default server http://localhost:3000
-            </li>
-            <li>
-                if we want to make the project for the production mode, we type
-                the following command to generate the production build, which is
-                best optimized
-                <pre>npm run build</pre>
+                Create the optimized production bundle with
+                <code>npm run build</code>. Use <code>npm run preview</code>
+                to preview that bundle locally.
             </li>
         </ul>
 
-        <div class="title">Features of React</div>
+        <h2 class="title">Features of React</h2>
         <ul>
-            <li>JSX [JavaScript XML] (JavaScript Syntax Extension)</li>
-            <li>Virtual DOM</li>
-            <li>One-way data binding</li>
-            <li>Performance</li>
-            <li>Extensions</li>
-            <li>Conditional statements</li>
-            <li>Components</li>
-            <li>Simplicity</li>
+            <li>Declarative UI written as components.</li>
+            <li>Props and state for passing data and describing changing UI.</li>
+            <li>Composition for building larger interfaces from smaller components.</li>
+            <li>Hooks for state and other React features in function components.</li>
+            <li>JSX as an optional, commonly used syntax for writing UI.</li>
+            <li>Renderers such as React DOM for the browser and React Native for native apps.</li>
         </ul>
 
-        <div class="title">React advantages and disadvantages</div>
-        <b>Advantage of ReactJS </b>
+        <h2 class="title">React trade-offs</h2>
         <ul>
-            <li>easy to learn and use</li>
-            <li>creating dynamic web applications becomes easier</li>
-            <li>reusable components</li>
-            <li>performance enhancement</li>
-            <li>support of handy tools</li>
-            <li>known to be seo friendly</li>
-            <li>benefit of having JavaScript library</li>
-            <li>scope for testing the codes</li>
-        </ul>
-        <b>Dis-advantages of ReactJS</b>
-        <ul>
-            <li>high pace of development</li>
-            <li>poor documentation</li>
-            <li>view part</li>
-            <li>jsx as a barrier</li>
+            <li>React focuses on UI. Apps choose their own routing, data-fetching, and build tools unless a framework provides them.</li>
+            <li>JSX and many modern React patterns rely on a build step, though React can also be added to an existing page.</li>
+            <li>Component boundaries and shared state still need careful design as an app grows.</li>
         </ul>
 
-        <div class="title">React JSX</div>
-        All of the React components have a render function. The render function
-        specifies the HTML output of a React component. JSX(JavaScript
-        Extension), is a React extension which allows writing JavaScript code
-        that looks like HTML. In other words, JSX is an HTML-like syntax used by
-        React that extends ECMAScript so that HTML-like syntax can co-exist with
-        JavaScript/React code. The syntax is used by preprocessors (i.e.,
-        transpilers like babel) to transform HTML-like syntax into standard
-        JavaScript objects that a JavaScript engine will parse.
+        <h2 class="title">React JSX</h2>
+        Function components return UI; class components return UI from their
+        <code>render</code> method. JSX is an optional JavaScript syntax for
+        describing that UI with markup-like expressions. A build tool transforms
+        JSX into JavaScript that React can render.
         <pre>
             JSX File
             &lt;div>Hello JavaTpoint&lt;/div>
@@ -286,7 +253,7 @@ export default App;
 
         </pre>
 
-        <div class="title">Ways of styling React Component</div>
+        <h2 class="title">Ways of styling React Component</h2>
         <ul>
             <li>Inline CSS</li>
             <li>Normal CSS</li>
@@ -298,7 +265,7 @@ export default App;
             <li>Stylable</li>
         </ul>
 
-        <div class="title">React Components</div>
+        <h2 class="title">React Components</h2>
         The component-based approach was introduced to overcome the issue of
         traditional DOM structure. In this approach, the entire application is
         divided into a small logical group of code, which is known as
@@ -311,22 +278,22 @@ export default App;
         have mainly two types of components. They are
         <ul>
             <li>
-                <b>Functional Components</b>: In React, function components are
-                a way to write components that only contain a render method and
-                don't have their own state. They are simply JavaScript functions
-                that may or may not receive data as parameters. We can create a
-                function that takes props(properties) as input and returns what
-                should be rendered. 
+                <b>Function Components</b>: A function component is a
+                JavaScript function that receives props and returns UI. It can
+                also use Hooks such as <code>useState</code> and
+                <code>useReducer</code> to manage state. Function components are
+                the usual choice for new React components.
                 <pre>
-                    function FunctionalComponent (props) {
-                        return &lt;h1>Welcome to the , {props.name}</h1>;  
+                    function Greeting({ name }) {
+                        return &lt;h1>Welcome, {name}&lt;/h1>;
                     }  
                 </pre>
-                The <b>functional component</b> is also known as a <b>stateless component</b> because they do not hold or manage state. 
             </li>
-            <li><b>Class Components</b>: Class components are more complex than functional components. 
-                It requires us to extend from <b>React.Component</b> and create a render function which returns a React element. 
-                We can pass data from one class to other class components. We can create a class by defining a class that extends Component and has a render function.
+            <li><b>Class Components</b>: Class components extend
+                <b>React.Component</b> and implement a <code>render</code>
+                method. They can hold state and define lifecycle methods. React
+                still supports them, though function components are generally
+                used for new code.
                 <pre>
                     class MyComponent extends React.Component {
                         render() {
@@ -335,47 +302,67 @@ export default App;
                             );
                         }
                     }</pre>
-                The <b>class component</b> is also known as a <b>stateful component</b> because they can hold or manage local state.
             </li>
         </ul>
 
-        <div class="title">React State</div>
-        The state is an updatable structure that is used to contain data or information about the component. The state in a component can change over time. The change in state over time can happen as a response to user action or system event. A component with the state is known as <b>stateful components</b>. It is the heart of the react component which determines the behavior of the component and how it will render. They are also responsible for making a component dynamic and interactive. It can be set by using the <b>setState()</b> method and calling <b>setState()</b> method <b>triggers UI updates</b>.
+        <h2 class="title">React State</h2>
+        State is data a component remembers between renders. In function
+        components, <code>useState</code> returns the current state snapshot
+        and a setter; in class components, state is updated with
+        <code>setState</code>. Setting state requests a new render. Treat
+        objects and arrays in state as immutable: create an updated value
+        instead of changing the existing one.
+        <pre><code>import { useState } from "react";
 
-        <div class="title">React Props</div>
+function Counter() {
+  const [count, setCount] = useState(0);
+  return &lt;button onClick={() =&gt; setCount(value =&gt; value + 1)}>{count}&lt;/button>;
+}</code></pre>
+
+        <h2 class="title">React Props</h2>
         <b>Props</b> stand for <b>Properties</b>. They are <b>read-only</b>. It is <b>an object</b> which stores the value of attributes of a tag and work similar to the HTML attributes. It gives a way to pass data from one component to other components. It is similar to function arguments. Props are passed to the component in the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component. Inside the components, we can add attributes called <b>props</b>. These attributes are available in the component as <b>props</b> and can be used to render dynamic data in our render method.
         <h3>Default Props</h3>
-        It is not necessary to always add props in the render() element. We can also set default props directly on the component.
+        Give function component props JavaScript defaults in the parameter
+        list. For example:
+        <pre><code>function Greeting({ name = "Guest" }) {
+  return &lt;p>Hello, {name}!&lt;/p>;
+}</code></pre>
+        A default is used when a prop is <code>undefined</code>; an explicit
+        <code>null</code> value is kept.
         <h3>State and Props</h3>
         It is possible to combine both state and props in our app. We can set the state in the parent component and pass it in the child component using props.
 
-        <div class="title">State vs Props</div>
+        <h2 class="title">State vs Props</h2>
         <h3>State</h3>
         The state is an updatable structure that is used to contain data or information about the component and can change over time. The change in state can happen as a response to user action or system event. It is the heart of the react component which determines the behavior of the component and how it will render. A state must be kept as simple as possible. It represents the component's local state or information. It can only be accessed or modified inside the component or by the component directly.
         <h3>Props</h3>
         Props are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It allows passing data from one component to other components. It is similar to function arguments and can be passed to the component the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component.
 
-        <div class="title">React Component API</div>
-        ReactJS component is a top-level API. It makes the code completely individual and reusable in the application. It includes various methods for:
-        <ul>
-            <li>Creating elements</li>
-            <li>Transforming elements</li>
-            <li>Fragments</li>
-        </ul>
+        <h2 class="title">Rendering to the DOM</h2>
+        A client-rendered app creates a root for a browser DOM element and
+        renders its root component there. Most apps need one root. A
+        server-rendered page uses <code>hydrateRoot</code> instead so React can
+        attach to the HTML that is already on the page.
+        <pre><code>import { createRoot } from "react-dom/client";
+import App from "./App";
 
-        <div class="title">React Component Life-Cycle</div>
-        In ReactJS, every component creation process involves various lifecycle methods. 
-        These lifecycle methods are termed as component's lifecycle. 
-        These lifecycle methods are called at various points during a component's life. 
-        The lifecycle of the component is divided into four phases. They are:
-        <ul>
-            <li><h3>Initial Phase</h3> It is the birth phase of the lifecycle of a ReactJS component. Here, the component starts its journey on a way to the DOM. In this phase, a component contains the default Props and initial State. The initial phase only occurs once.</li>
-            <li><h3>Mounting Phase</h3> In this phase, the instance of a component is created and inserted into the DOM.</li>
-            <li><h3>Updating Phase</h3> Here, we get new Props and change State. This phase also allows to handle user interaction and provide communication with the components hierarchy. The main aim of this phase is to ensure that the component is displaying the latest version of itself. Unlike the Birth or Death phase, this phase repeats again and again.</li>
-            <li><h3>Unmounting Phase</h3> It is the final phase of the react component lifecycle. It is called when a component instance is destroyed and unmounted from the DOM.</li>
-        </ul>
+const root = createRoot(document.getElementById("root"));
+root.render(&lt;App />);</code></pre>
 
-        <div class="title">React Forms</div>
+        <h2 class="title">Class Component Lifecycle</h2>
+        Class components expose lifecycle methods for work tied to mounting,
+        updating, and removal from the screen:
+        <ul>
+            <li><code>componentDidMount</code> runs after the component is added to the screen.</li>
+            <li><code>componentDidUpdate</code> runs after an update is committed.</li>
+            <li><code>componentWillUnmount</code> runs before the component is removed.</li>
+        </ul>
+        Function components use Effects to synchronize with external systems.
+        Effects are not a one-to-one replacement for class lifecycle methods;
+        use them for a specific synchronization process and clean it up when
+        that process ends.
+
+        <h2 class="title">React Forms</h2>
         Forms are an integral part of any modern web application. It allows the users to interact with the application as well as gather information from the users. Forms can perform many tasks that depend on the nature of our business requirements and logic such as authentication of the user, adding user, searching, filtering, booking, ordering, etc. A form can contain text fields, buttons, checkbox, radio button, etc. 
         <h3>Creating Form</h3>
         React offers a stateful, reactive approach to build a form. The component rather than the DOM usually handles the React form. 
@@ -392,7 +379,7 @@ export default App;
             </li>
         </ul>
 
-        <div class="title">React Events</div>
+        <h2 class="title">React Events</h2>
         An event is an action that could be triggered as a result of the user action or system generated event. For example, a mouse click, loading of a web page, pressing a key, window resizes, and other interactions are called events. React has its own event handling system which is very similar to handling events on DOM elements. The react event handling system is known as <b>Synthetic Events</b>. The <b>synthetic event</b> is a cross-browser wrapper of the browser's native event. Handling events with react have some syntactic differences from handling events on DOM. These are:
         <ul>
             <li>React events are named as <b>camelCase</b> instead of lowercase.</li>
@@ -400,7 +387,7 @@ export default App;
             <li>In react, we cannot return false to prevent the default behavior. We must call <b>preventDefault</b> event explicitly to prevent the default behavior.</li>
         </ul>
 
-        <div class="title">React Conditional Rendering</div>
+        <h2 class="title">React Conditional Rendering</h2>
         In React, conditional rendering works the same way as the conditions work in JavaScript. We use JavaScript operators to create elements representing the current state, and then React Component update the UI to match them. There is more than one way to do conditional rendering in React. They are given below.
         <ul>
             <li>if</li>
@@ -410,14 +397,18 @@ export default App;
             <li>Conditional Rendering with enums</li>
         </ul>
 
-        <div class="title">React Lists</div>
+        <h2 class="title">React Lists</h2>
         Lists are used to display data in an ordered format and mainly used to display menus on websites. In React, Lists can be created in a similar way as we create lists in JavaScript. The map() function is used for traversing the lists.
 
-        <div class="title">React Keys</div>
+        <h2 class="title">React Keys</h2>
         A key is a unique identifier. In React, it is used to identify which items have changed, updated, or deleted from the Lists. It is useful when we dynamically create components or when the user alters the list. It also helps to determine which components in a collection needs to be re-rendered instead of re-rendering the entire set of components every time. The best way to pick a key as a string that uniquely identifies the items in the list.
 
-        <div class="title">React Fragments</div>
-        In React, to render something on the screen, we need to use a render method inside the component. This render method can return single elements or multiple elements. The render method will only render a single root node inside it at a time. React introduced Fragments from the 16.2 and above version. Fragments allow us to group a list of children without adding extra nodes to the DOM.
+        <h2 class="title">React Fragments</h2>
+        Fragments group sibling elements without adding a wrapper element to
+        the DOM. Use them when the surrounding layout does not need another
+        element. When a fragment is returned from a list, use the explicit
+        <code>React.Fragment</code> form to provide its <code>key</code>;
+        shorthand fragments do not accept a key.
         <pre>
             &lt;React.Fragment>  
                 &lt;h2> child1 &lt;/h2>   
@@ -432,43 +423,49 @@ export default App;
                 .. ..... .... ...  
             &lt;/>
         </pre>
-        <ul>
-            <li>It makes the execution of code faster as compared to the div tag.</li>
-            <li>It takes less memory.</li>
-        </ul>
         We need a key for mapping a collection to an array of fragments such as to create a description list. If we need to provide keys, we have to declare the fragments with the explicit &lt;React.Fragment key={item.id}> syntax. Key is the only attributes that can be passed with the Fragments. The shorthand syntax does not accept key attributes.
 
-        <div class="title">React Router</div>
-        React Router plays an important role to display multiple views in a single page application. Without React Router, it is not possible to display multiple views in React applications. React contains three different packages for routing. These are:
-        <ul>
-            <li><b>react-router:</b> It provides the core routing components and functions for the React Router applications.</li>
-            <li><b> react-router-native:</b> It is used for mobile applications.</li>
-            <li><b>react-router-dom:</b> It is used for web applications design.</li>
-        </ul>
-        It is not possible to install react-router directly in your application. To use react routing, first, you need to install react-router-dom modules in your application. There are two types of router components:
-        <ul>
-            <li><b>&lt;BrowserRouter>:</b> It is used for handling the dynamic URL.</li>
-            <li><b>&lt;HashRouter>:</b> It is used for handling the static request.</li>
-        </ul>
-        <h3>Route</h3>
-        Route is used to define and render component based on the specified path. It will accept components and render to define what should be rendered.
+        <h2 class="title">React Router</h2>
+        A router maps URL paths to views and handles navigation. React can
+        render multiple views without a routing library, but a router provides
+        route matching, links, nested routes, and browser history integration.
+        The current declarative React Router API is available from the
+        <code>react-router</code> package:
+        <pre><code>npm install react-router</code></pre>
+        <p>Wrap the routes in <code>BrowserRouter</code>; use <code>Routes</code>
+        and <code>Route</code> to match paths, <code>Link</code> for navigation,
+        and <code>Navigate</code> for redirects.</p>
+        <pre><code>import { BrowserRouter, Link, Navigate, Route, Routes } from "react-router";
 
-        <h3>&lt;Link> component</h3>
-        This component is used to create links which allow to navigate on different URLs and render its content without reloading the webpage.
+// Home, About, and NotFound are components defined elsewhere.
+function App() {
+  return (
+    &lt;BrowserRouter>
+      &lt;nav>
+        &lt;Link to="/">Home&lt;/Link>
+        &lt;Link to="/about">About&lt;/Link>
+      &lt;/nav>
+      &lt;Routes>
+        &lt;Route path="/" element={&lt;Home />} />
+        &lt;Route path="/about" element={&lt;About />} />
+        &lt;Route path="/old" element={&lt;Navigate to="/about" replace />} />
+        &lt;Route path="*" element={&lt;NotFound />} />
+      &lt;/Routes>
+    &lt;/BrowserRouter>
+  );
+}</code></pre>
+        <h3>BrowserRouter and HashRouter</h3>
+        <code>BrowserRouter</code> uses the History API and clean paths. A
+        static host must serve the app entry point for nested URLs. Use
+        <code>HashRouter</code> when the host cannot be configured to do that;
+        it keeps the route after a <code>#</code> in the URL.
+        <h3>Nested routes</h3>
+        Nested routes let a parent layout render matching child routes through
+        <code>Outlet</code>. React Router v6 examples may import from
+        <code>react-router-dom</code>; the v7 examples here use
+        <code>react-router</code>.
 
-        <h3>&lt;Link> vs &lt;NavLink></h3>
-        The Link component allows navigating the different routes on the websites, whereas NavLink component is used to add styles to the active routes.
-
-        <h3>React Router Routes</h3>
-        The &lt;Routes> component is used to render components only when the path will be matched. Otherwise, it returns to the not found component.
-
-        <h3>React Router &lt;Redirect></h3>
-        A &lt;Redirect> component is used to redirect to another route in our application to maintain the old URLs. It can be placed anywhere in the route hierarchy.
-
-        <h3>Nested Routing in React</h3>
-        Nested routing allows us to render sub-routes in our application
-
-        <div class="title">React Styling</div>
+        <h2 class="title">React Styling</h2>
         The <b>style</b> attribute is the most used attribute for styling in React applications, which adds dynamically-computed styles at render time. It accepts a JavaScript object in camelCased properties rather than a CSS string. There are many ways available to add styling to our React App or Component with CSS. Four ways to style React Components, are given below:
         <ul>
             <li>Inline Styling</li>
@@ -477,17 +474,33 @@ export default App;
             <li>Styled Components</li>
         </ul>
 
-        <div class="title">React Map</div>
-        A map is a data collection type where data is stored in the form of pairs. It contains a unique key. The value stored in the map must be mapped to the key. We cannot store a duplicate pair in the map(). It is because of the uniqueness of each stored key. It is mainly used for fast searching and looking up data.
+        <h2 class="title">JavaScript Map</h2>
+        <code>Map</code> is a JavaScript collection of key-value pairs. Each
+        key is unique, and keys can be values of any type. In React, use
+        <code>Array.prototype.map</code> to turn an array of data into a list
+        of elements, and give each element a stable <code>key</code> prop.
 
-        <div class="title">React Table</div>
-        A table is an arrangement which organizes information into rows and columns. It is used to store and display data in a structured format. The react-table is a lightweight, fast, fully customizable (JSX, templates, state, styles, callbacks), and extendable Datagrid built for React. It is fully controllable via optional props and callbacks.
+        <h2 class="title">Tables in React</h2>
+        Use semantic HTML table elements when the content is tabular data:
+        <code>table</code>, <code>thead</code>, <code>tbody</code>,
+        <code>tr</code>, <code>th</code>, and <code>td</code>. React renders
+        these elements and their data-driven rows as JSX. For sorting,
+        filtering, pagination, or other data-grid features, choose a maintained
+        table library that fits the project rather than treating a table as a
+        built-in React feature.
 
-        <div class="title">React Higher-Order Components</div>
-        It is also known as <b>HOC</b>. In React, <b>HOC</b> is an advanced technique for reusing component logic. It is a function that takes a component and returns a new component. According to the official website, it is not the feature(part) in React API, but a pattern that emerges from React compositional nature. They are similar to JavaScript functions used for adding additional functionalities to the existing component. A higher order component function accepts another function as an argument. The map function is the best example to understand this. The main goal of this is to decompose the component logic into simpler and smaller functions that can be reused as you need.
+        <h2 class="title">Higher-Order Components</h2>
+        A higher-order component (HOC) is a function that receives a component
+        and returns an enhanced component. It is a reuse pattern, not a built-in
+        React API. HOCs remain useful in some libraries, while composition and
+        custom Hooks are often simpler choices for sharing behavior in new
+        components.
 
-        <div class="title">React Code Splitting</div>
-        As our app grows, our bundle will grow too, especially when we are using large third-party libraries. If the bundle size gets large, it takes a long time to load on a webpage. For avoiding the large bundling, it'?'s good to start <b>splitting</b> our bundle. <b>React 16.6.0</b>, released in October 2018, and introduced a way of performing <b>code splitting</b>. <b>Code-Splitting</b> is a feature supported by <b>Webpack</b> and <b>Browserify</b>, which can create multiple bundles that can be dynamically loaded at runtime. <b>Code-Splitting</b> uses <b>React.lazy</b> and <b>Suspense</b> tool/library, which helps us to load a dependency lazily and only load it when needed by the user.
+        <h2 class="title">Code Splitting</h2>
+        Code splitting lets a build tool create smaller JavaScript chunks that
+        can be loaded when needed. React's <code>lazy</code> can defer loading
+        a component, and <code>Suspense</code> can show a fallback while it is
+        loading:
         <pre>
             ...
             const ExampleComponent = React.lazy(() => import('./ExampleComponent')); 
@@ -497,63 +510,82 @@ export default App;
             &lt;/Suspense>
             ...
         </pre>
-        The fallback prop accepts the React elements which we want to render while waiting for the component to load.
+        The <code>fallback</code> prop accepts the UI to show while the lazy
+        component loads. A lazy component is declared with a default export; a
+        small wrapper can re-export a named component as the default.
         <h3>Error boundaries</h3>
         If any module fails to load, for example, due to network failure, we will get an error. We can handle these errors with Error Boundaries. Once we have created the Error Boundary, we can use it anywhere above our lazy components to display an error state.
         <h3>Named Export</h3>
         Currently, <b>React.lazy</b> supports default exports only. If any module we want to import using named exports, we need to create an intermediate module that re-exports it as the default.
 
-        <div class="title">React Context</div>
-        Context allows passing data through the component tree without passing props down manually at every level. There are two main steps to use the React context into the React application:
-        <ul>
-            <li>Setup a context provider and define the data which we want to store.</li>
-            <li>Use a context consumer whenever we need the data from the store.</li>
-        </ul>
+        <h2 class="title">React Context</h2>
+        Context lets a component provide a value to descendants without
+        forwarding it through every intermediate component. Create a context,
+        place a provider above the components that need it, and read the value
+        with <code>useContext</code>. Use context for values shared across a
+        part of the tree, such as a theme or current account; ordinary props
+        are simpler when only a nearby child needs the value.
 
-        <div class="title">React Hooks</div>
-        Hooks are the new feature introduced in the React 16.8 version. It allows us to use state and other React features without writing a class. Hooks are the functions which "hook into" React state and lifecycle features from function components. It does not work inside classes.
+        <h2 class="title">React Hooks</h2>
+        Hooks let function components use React features such as state,
+        context, refs, and Effects. Hooks were introduced in React 16.8. Call
+        them only at the top level of a function component or a custom Hook,
+        never inside conditions, loops, event handlers, or class components.
         <h3>Rules of Hooks</h3>
         <ul>
             <li>Only call Hooks at the top level</li>
             <li>Only call Hooks from React functions</li>
         </ul>
-        <h3>Hooks State</h3>
-        Hook state is the new way of declaring a state in React app. Hook uses <b>useState()</b> functional component for setting and retrieving state.
-        <h3>Hooks Effect</h3>
-        The Effect Hook allows us to perform side effects (an action) in the function components. It does not use components lifecycle methods which are available in class components. Side effects have common features which the most web applications need to perform, such as:
+        <h3>State with Hooks</h3>
+        <code>useState</code> stores a value between renders and returns a
+        setter that requests an update. Use <code>useReducer</code> when state
+        transitions are easier to describe with a reducer function.
+        <h3>Effects</h3>
+        <code>useEffect</code> synchronizes a component with an external
+        system after a render, such as a subscription, timer, browser API, or
+        third-party widget. Return a cleanup function when that connection
+        needs to be stopped. For derived values or logic caused by a user
+        action, calculate during rendering or use an event handler instead of
+        adding an Effect.
         <ul>
-            <li>Updating the DOM</li>
-            <li>Fetching and consuming data from a server API</li>
-            <li>Setting up a subscription</li>
-            <li>Et Cetera</li>
+            <li>Connect and disconnect a subscription.</li>
+            <li>Start and clear a timer.</li>
+            <li>Synchronize a non-React widget with current props or state.</li>
         </ul>
         <h3>Custom Hooks</h3>
         A custom Hook is a JavaScript function. The name of custom Hook starts with "use" which can call other Hooks. A custom Hook is just like a regular function, and the word "use" in the beginning tells that this function follows the rules of Hooks. Building custom Hooks allows us to extract component logic into reusable functions.
         <h3>Built-in Hooks</h3>
         <ul>
             <li>
-                Basic Hooks
+                State and context
                 <ul>
                     <li>useState</li>
-                    <li>useEffect</li>
+                    <li>useReducer</li>
                     <li>useContext</li>
                 </ul>
             </li>
             <li>
-                Additional Hooks
+                Refs, Effects, and performance
                 <ul>
-                    <li>useReducer</li>
+                    <li>useRef</li>
+                    <li>useEffect</li>
+                    <li>useLayoutEffect</li>
+                    <li>useInsertionEffect</li>
                     <li>useCallback</li>
                     <li>useMemo</li>
-                    <li>useRef</li>
                     <li>useImperativeHandle</li>
-                    <li>useLayoutEffect</li>
                     <li>useDebugValue</li>
+                    <li>useId</li>
+                    <li>useTransition</li>
+                    <li>useDeferredValue</li>
+                    <li>useSyncExternalStore</li>
+                    <li>useActionState</li>
+                    <li>useOptimistic</li>
                 </ul>
             </li>
         </ul>
 
-        <div class="title">React Flux</div>
+        <h2 class="title">React Flux</h2>
         Flux is an application architecture that Facebook uses internally for building the client-side web application with React. It is neither a library nor a framework. It is a kind of architecture that complements React as view and follows the concept of Unidirectional Data Flow model. It is useful when the project has dynamic data, and we need to keep the data updated in an effective manner. It reduces the runtime errors. Flux applications have three major roles in dealing with data:
         <ul>
             <li>Dispatcher</li>
@@ -561,19 +593,27 @@ export default App;
             <li>Views (React components)</li>
         </ul>
 
-        <div class="title">React Redux</div>
-        Redux is an open-source JavaScript library used to manage application state. React uses Redux for building the user interface. The components of Redux architecture are
+        <h2 class="title">Redux with React</h2>
+        Redux is a state-management library that can be used with React or other
+        UI layers. For React apps, Redux Toolkit is the recommended way to set
+        up a store and write reducers; React-Redux connects the store to React
+        components. Redux is useful when shared application state needs a
+        central update model, but local component state is enough for many UI
+        needs. See the
+        <a href="https://redux-toolkit.js.org/usage/usage-guide/">Redux Toolkit usage guide</a>.
         <ul>
-            <li>STORE</li>
-            <li>ACTION</li>
-            <li>REDUCER</li>
+            <li><b>Store:</b> holds the current application state.</li>
+            <li><b>Action:</b> describes an event or requested change.</li>
+            <li><b>Reducer:</b> calculates the next state from the current state and an action.</li>
+            <li><b>Selector:</b> reads or derives data from the store.</li>
         </ul>
 
-
-        <script>
-            const scrollingElement = document.scrollingElement || document.body;
-            scrollingElement.scrollTop = scrollingElement.scrollHeight;
-        </script>
+        <h2 class="title">Official Resources</h2>
+        <ul>
+            <li><a href="https://react.dev/learn">React Learn</a> and the <a href="https://react.dev/reference/react">React API reference</a>.</li>
+            <li><a href="https://reactrouter.com/start/declarative/installation">React Router installation and declarative routing</a>.</li>
+            <li><a href="https://react.dev/blog/2025/02/14/sunsetting-create-react-app">Create React App deprecation announcement</a>.</li>
+        </ul>
 </main>
 </div>
 <footer class="siteFooter"><div class="footerInner"><p class="copyright">Copyright © <span id="currentYear"></span> <a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer">Ashish Ranjan</a></p><nav class="footerLinks" aria-label="Links and support"><a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer" aria-label="Portfolio" title="Portfolio">↗</a><a href="https://github.com/a2rp" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">GH</a><a href="https://codepen.io/ash1198" target="_blank" rel="noopener noreferrer" aria-label="CodePen" title="CodePen">CP</a><a href="https://www.linkedin.com/in/aashishranjan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">in</a><a href="https://www.facebook.com/theash.ashish/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">f</a><a href="https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">▶</a><a href="mailto:ash.ranjan09@gmail.com" aria-label="Email" title="Email">@</a><a href="https://a2rp-donation-page.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Support" title="Support">♥</a><a href="https://buymeacoffee.com/a2rp" target="_blank" rel="noopener noreferrer" aria-label="Buy Me a Coffee" title="Buy Me a Coffee">☕</a><a href="https://www.patreon.com/a2rp" target="_blank" rel="noopener noreferrer" aria-label="Patreon" title="Patreon">P</a></nav></div></footer><button class="goTop" id="goTop" type="button" aria-label="Back to top" title="Back to top">↑</button>
