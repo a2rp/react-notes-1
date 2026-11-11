@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Practical React notes covering JSX, components, state, props, hooks, routing and Redux." />
+<meta name="description" content="React study notes covering JSX, components, state, Hooks, routing, forms, and Redux, updated for React 19.3." />
 <meta name="theme-color" content="#121212" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="React Notes | Ashish Ranjan" />
-<meta property="og:description" content="Practical React notes covering core concepts, patterns and common APIs." />
+<meta property="og:description" content="React study notes covering core concepts, patterns, and APIs, updated for React 19.3." />
 <meta property="og:image" content="./public/preview.png" />
 <meta property="og:url" content="https://a2rp.github.io/react-notes-1/" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -28,16 +28,15 @@
 <div class='pageLayout'>
 <aside class="sectionNav" id="sectionNav" aria-label="React notes sections"><p>Study guide</p><nav class="sectionLinks" id="sectionLinks"></nav></aside>
 <main class='notes' id='notes'>
-<p class="lastUpdated">Last updated: November 11, 2026</p>
+<p class="lastUpdated">Last updated: November 12, 2026</p>
         <h1 class="title">React</h1>
-        React (also known as React.js or ReactJS) is a free and open-source
-        front-end JavaScript library for building user interfaces based on
-        components. It is maintained by Meta (formerly Facebook) and a community
-        of individual developers and companies. React can be used to develop
-        single-page, mobile, or server-rendered applications with frameworks
-        like Next.js. Because React is only concerned with the user interface
-        and rendering components to the DOM, React applications often rely on
-        libraries for routing and other client-side functionality.
+        React is an open-source JavaScript library for building user interfaces
+        from components. The React project is owned by the React Foundation,
+        hosted by the Linux Foundation, and developed by its maintainers and
+        open-source contributors. React can power web interfaces, server-rendered
+        apps through frameworks, and native apps with React Native. React focuses
+        on the UI; routing, data loading, and deployment are provided by frameworks
+        or other libraries.
 
         <h2 class="title">Why do we use React?</h2>
         React lets developers describe a user interface as components derived
@@ -48,71 +47,16 @@
 
         <h2 class="title">React Version History</h2>
         <ul>
-            <li>
-                Back in 2011, Jordan Walke, a software engineer at Facebook,
-                created this library to handle the increasing number of updates.
-            </li>
-            <li>
-                Their code needed to be upgraded immediately to become more
-                efficient and enhance the user experience. This marked the birth
-                of ReactJS.
-            </li>
-            <li>
-                It was first used by Facebook in 2011. Later, when Facebook
-                acquired Instagram, they too wanted to use React.
-            </li>
-            <li>
-                As the demand to use the technology grew with time, Facebook
-                officially made it an open-source language at JSConf in May
-                2013.
-            </li>
-            <li>
-                In 2014, React started to expand, and Atom, a hackable text
-                editor, was introduced.
-            </li>
-            <li>
-                In 2014, React Hot Loader was introduced. It is a plugin that
-                allows the live loading of React components.
-            </li>
-            <li>
-                In 2015, React Native was announced to enable easy development.
-                It was first made available for iOS and then launched for
-                Android in the same year. It was open-sourced the same year.
-            </li>
-            <li>
-                In 2016, the React.js conference was held in San Francisco.
-                Here, Draft.js was introduced. Later, with the introduction of
-                React Storybook and Blueprint, React was mainstream.
-            </li>
-            <li>
-                In 2017, Facebook launched React Fiber. The new set of
-                algorithms became the foundation of future improvements in the
-                React library. Airbnb also introduced React Sketch app, a new
-                open-source library. Netflix also removed React.js on the
-                client-side.
-            </li>
-            <li>
-                In 2018, Beyond React 16 was introduced at the Iceland
-                conference, and React 16.3.0 was released.
-            </li>
-            <li>In 2019, new React DevTools were released.</li>
-            <li>
-                React 17 was released in 2020 as a gradual-upgrade release. It
-                focused on making upgrades easier and did not add new
-                developer-facing features.
-            </li>
-            <li>
-                React 18 was released in March 2022. It introduced the new root
-                API and concurrent rendering capabilities, including automatic
-                batching.
-            </li>
-            <li>
-                React 19 became stable in December 2024. It added form Actions,
-                new resource APIs, and hooks such as <b>useActionState</b> and
-                <b>useOptimistic</b>. See the
-                <a href="https://react.dev/blog/2024/12/05/react-19">React 19 release notes</a>
-                for details.
-            </li>
+            <li>Jordan Walke developed an early version of React at Facebook before it was shared publicly.</li>
+            <li>React was open-sourced at JSConf US in May 2013. It is a JavaScript library, not a programming language.</li>
+            <li>React Native was announced in 2015 as a way to build native mobile interfaces with React.</li>
+            <li>React 16.8 introduced Hooks in 2019, allowing function components to use state and other React features.</li>
+            <li>React 17, released in 2020, focused on making gradual upgrades easier and added no new developer-facing features.</li>
+            <li>React 18 was released in March 2022. It introduced the new root API and concurrent rendering features, including automatic batching.</li>
+            <li>React 19 became stable in December 2024. It added Actions, resource APIs, and Hooks such as <b>useActionState</b> and <b>useOptimistic</b>. See the <a href="https://react.dev/blog/2024/12/05/react-19">React 19 release notes</a>.</li>
+            <li>React 19.2 arrived in October 2025 with <code>&lt;Activity&gt;</code>, <code>useEffectEvent</code>, and React Performance Tracks. Read the <a href="https://react.dev/blog/2025/10/01/react-19-2">React 19.2 announcement</a>.</li>
+            <li>The React Foundation launched in February 2026 under the Linux Foundation. React and related projects moved from Meta to this independent foundation; technical direction remains with React maintainers. Read the <a href="https://react.dev/blog/2026/02/24/the-react-foundation">foundation announcement</a>.</li>
+            <li>React 19.3 arrived in September 2026. It made View Transitions and Fragment Refs stable and added React DOM support for <code>browser()</code> and Trusted Types. See the <a href="https://react.dev/blog/2026/09/09/react-19-3">React 19.3 announcement</a>.</li>
         </ul>
 
         <h2 class="title">Starting a React project</h2>
@@ -320,7 +264,10 @@ function Counter() {
 }</code></pre>
 
         <h2 class="title">React Props</h2>
-        <b>Props</b> stand for <b>Properties</b>. They are <b>read-only</b>. It is <b>an object</b> which stores the value of attributes of a tag and work similar to the HTML attributes. It gives a way to pass data from one component to other components. It is similar to function arguments. Props are passed to the component in the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component. Inside the components, we can add attributes called <b>props</b>. These attributes are available in the component as <b>props</b> and can be used to render dynamic data in our render method.
+        Props are read-only inputs passed by a parent to a component. They can
+        contain values such as strings, objects, functions, or React elements.
+        A component should not mutate its props; a parent can pass new values
+        when it renders again. Props work much like function arguments.
         <h3>Default Props</h3>
         Give function component props JavaScript defaults in the parameter
         list. For example:
@@ -334,10 +281,13 @@ function Counter() {
 
         <h2 class="title">State vs Props</h2>
         <h3>State</h3>
-        The state is an updatable structure that is used to contain data or information about the component and can change over time. The change in state can happen as a response to user action or system event. It is the heart of the react component which determines the behavior of the component and how it will render. A state must be kept as simple as possible. It represents the component's local state or information. It can only be accessed or modified inside the component or by the component directly.
+        State is information a component remembers between renders. A state
+        setter requests an update; treat objects and arrays in state as
+        immutable and create a new value when something changes.
         <h3>Props</h3>
-        Props are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It allows passing data from one component to other components. It is similar to function arguments and can be passed to the component the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component.
-
+        Props are read-only inputs supplied by a parent. They describe what a
+        component should render; local changes belong in state or in the parent
+        that owns the value.
         <h2 class="title">Rendering to the DOM</h2>
         A client-rendered app creates a root for a browser DOM element and
         renders its root component there. Most apps need one root. A
@@ -462,11 +412,15 @@ function App() {
         <h3>Nested routes</h3>
         Nested routes let a parent layout render matching child routes through
         <code>Outlet</code>. React Router v6 examples may import from
-        <code>react-router-dom</code>; the v7 examples here use
+        <code>react-router-dom</code>; v7 and newer examples use
         <code>react-router</code>.
 
         <h2 class="title">React Styling</h2>
-        The <b>style</b> attribute is the most used attribute for styling in React applications, which adds dynamically-computed styles at render time. It accepts a JavaScript object in camelCased properties rather than a CSS string. There are many ways available to add styling to our React App or Component with CSS. Four ways to style React Components, are given below:
+        Use <code>className</code> and CSS for most styling. The
+        <code>style</code> prop accepts a JavaScript object with camel-cased
+        property names and is useful for small sets of dynamic inline styles.
+        React does not prescribe a styling system; common options include CSS
+        files, CSS Modules, Sass, utility classes, and CSS-in-JS libraries.
         <ul>
             <li>Inline Styling</li>
             <li>CSS Stylesheet</li>
@@ -569,6 +523,7 @@ function App() {
                 <ul>
                     <li>useRef</li>
                     <li>useEffect</li>
+                    <li>useEffectEvent</li>
                     <li>useLayoutEffect</li>
                     <li>useInsertionEffect</li>
                     <li>useCallback</li>
@@ -586,7 +541,12 @@ function App() {
         </ul>
 
         <h2 class="title">React Flux</h2>
-        Flux is an application architecture that Facebook uses internally for building the client-side web application with React. It is neither a library nor a framework. It is a kind of architecture that complements React as view and follows the concept of Unidirectional Data Flow model. It is useful when the project has dynamic data, and we need to keep the data updated in an effective manner. It reduces the runtime errors. Flux applications have three major roles in dealing with data:
+        Flux is a client-side application architecture introduced by Facebook.
+        It describes one-way data flow: actions describe changes, a dispatcher
+        routes them, stores hold application state, and views render that state
+        and emit actions. Flux is an architecture pattern, not a React feature
+        or a guarantee against runtime errors. Redux is a separate library that
+        uses related unidirectional data-flow ideas.
         <ul>
             <li>Dispatcher</li>
             <li>Stores</li>

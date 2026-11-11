@@ -2,7 +2,7 @@
 
 ![React Notes preview](screenshot.png)
 
-A focused static reference page for revising React fundamentals, JSX, components, state, props, forms, events, routing, styling, hooks, context and Redux.
+A focused static reference page for React fundamentals, JSX, components, state, forms, routing, styling, Hooks, context, and Redux, updated for React 19.3.
 
 ## Features
 
